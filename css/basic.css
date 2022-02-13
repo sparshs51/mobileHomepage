@@ -390,7 +390,29 @@ input[type="email"]:invalid {
 .align-items-stretch {
   align-items: stretch !important;
 }
+.text-start {
+  text-align: left !important;
+}
 
+.text-end {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-sm {
+  font-size: 0.75rem;
+}
 section {
   padding-bottom: 10px;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-decoration-none {
+  text-decoration: none;
 }

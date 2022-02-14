@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/spacing.css" />
     <link rel="stylesheet" href="css/basic.css" />
     <link rel="stylesheet" href="css/homepage.css" />
+    <script
+      src="https://kit.fontawesome.com/a7d8945663.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Responsive navbar-->
@@ -25,10 +29,31 @@
         class="icon menu-icon"
         onclick="toggleSidebar()"
       />
-      <img src="assets/svg/user.svg" alt="user-icon" class="icon menu-icon" />
+      <img
+        src="assets/img/user-32.png"
+        alt="user-icon"
+        onclick="toggleModal()"
+        class="icon menu-icon"
+      />
     </nav>
     <!-- Page content-->
-    <section class="container" id="hero-header"></section>
+    <section class="hero-header d-flex align-items-center text-center">
+      <div>
+        <div class="slide">
+          <img src="assets/img/IIMB_New.jpg" alt="" class="bg-hero" />
+        </div>
+        <div class="bg-hero slide">
+          <img src="assets/img/admission-cover.png" alt="" class="bg-hero" />
+        </div>
+        <div class="slide bg-hero">
+          <img src="assets/img/masthead-bg.jpg" alt="" class="bg-hero" />
+        </div>
+      </div>
+      <div class="overlay-text d-flex flex-column align-items-center">
+        Find every college, exam and course at one place
+        <input type="text" class="search mt-3" placeholder="Search..." />
+      </div>
+    </section>
     <section class="container mb-2" id="ctas">
       <div class="row px-2">
         <div class="col-4 px-1">
@@ -651,35 +676,29 @@
         <div class="right-side"></div>
       </div>
     </section>
-    <section class="container" id="modal"></section>
+    <section class="modal px-4" id="modal">
+      <img
+        src="assets/svg/close.svg"
+        class="close-btn"
+        onclick="toggleModal()"
+        alt=""
+      />
+      <div
+        class="d-flex flex-column align-items-center justify-content-center mt-5"
+      >
+        <h3>Login or Sign Up</h3>
+        <button class="col btn mt-4 mb-2 primary">
+          Continue with facebook
+        </button>
+        <button class="col mb-4 btn danger">Continue with Google</button>
+        Or, use your email address
+        <div class="d-flex mt-2 col justify-content-between">
+          <div class="btn login-btn mr-2 text-center">Log In</div>
+          <div class="btn login-btn ml-2 text-center">Sign Up</div>
+        </div>
+      </div>
+    </section>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script>
-      var tabs = document.getElementById("tabs").children;
-      var tabItems = document.getElementById("tab-content").children;
-
-      var sidebar = document.getElementById("sidebar");
-      var sidebarRight = sidebar.getElementsByClassName("right-side")[0];
-
-      function changeTabs(tabName) {
-        if (tabName === "exam") {
-          tabs[0].classList.add("active");
-          tabItems[0].classList.add("active");
-          tabs[1].classList.remove("active");
-          tabItems[1].classList.remove("active");
-        } else {
-          tabs[0].classList.remove("active");
-          tabItems[0].classList.remove("active");
-          tabs[1].classList.add("active");
-          tabItems[1].classList.add("active");
-        }
-      }
-
-      function toggleSidebar() {
-        sidebar.classList.toggle("hide");
-      }
-
-      sidebarRight.onclick = toggleSidebar;
-    </script>
   </body>
 </html>

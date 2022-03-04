@@ -1,0 +1,60 @@
+.card-head-testimonial {
+  position: relative;
+}
+.card-head-testimonial::after {
+  position: absolute;
+  font-size: 72px;
+  content: "\201D";
+  right: 10px;
+  top: -10px;
+}
+.card-head-green {
+  background-color: #f5fffb;
+}
+.card-head-green::after {
+  color: #defff2;
+}
+.card-head-pink {
+  background-color: #fff8f8;
+}
+.card-head-pink::after {
+  color: #ffe6e6;
+}
+.card-head-blue {
+  background-color: #f7faff;
+}
+.card-head-blue::after {
+  color: #e5efff;
+}
+.card-head-yellow {
+  background-color: #fffef4;
+}
+.card-head-yellow::after {
+  color: #fcf7c6;
+}
+.name-initials {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #111;
+  &.green-initial {
+    color: #42dea1;
+    background-color: #defff2;
+    border: 1px solid #5afcbd;
+  }
+  &.pink-initial {
+    color: #fca0a0;
+    background-color: #ffd3d3;
+    border: 1px solid #fdc5c5;
+  }
+  &.blue-initial {
+    color: #95c1fd;
+    background-color: #e5efff;
+    border: 1px solid #95c1fd;
+  }
+  &.yellow-initial {
+    color: #e8dc53;
+    border: 1px solid #f0e780;
+    background-color: #fcf7c6;
+  }
+}

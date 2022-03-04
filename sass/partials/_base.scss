@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/assets/font/NunitoSans-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: ("/assets/font/NunitoSans-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/NunitoSans-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  position: relative;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left;
+  background-color: $body-bg;
+  overflow-x: hidden;
+}

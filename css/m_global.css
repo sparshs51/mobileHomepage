@@ -1,0 +1,444 @@
+@charset "UTF-8";
+hr {
+  background: #e8e8e8;
+}
+
+.text-ellipsis-2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 2) {
+  .text-ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.text-ellipsis-3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 3) {
+  .text-ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.text-ellipsis-4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 4) {
+  .text-ellipsis-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/assets/font/NunitoSans-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: "/assets/font/NunitoSans-Medium.ttf" format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/NunitoSans-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  position: relative;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #333333;
+  text-align: left;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-lighter {
+  font-weight: lighter;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semi {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-bolder {
+  font-weight: 900;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* hero header */
+.hero-header {
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  background: #f7faff 0% 0% no-repeat padding-box;
+  width: 100%;
+}
+.hero-header .hero-content {
+  padding: 18px 20px;
+}
+.hero-header .main-heading {
+  font-size: 20px;
+}
+.hero-header .hero-subheading {
+  font-size: 14px;
+  color: #666666;
+}
+.hero-header .hero-left-img {
+  z-index: -1;
+  position: absolute;
+  left: -145px;
+  bottom: -28px;
+  height: 400px;
+  width: 450px;
+}
+.hero-header .hero-right-img {
+  z-index: -1;
+  position: absolute;
+  right: -168px;
+  bottom: 0;
+}
+
+.navbar {
+  height: 56px;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
+}
+
+.navbar .menu-icon {
+  margin: 0 10px;
+  height: 40px;
+  width: 132px;
+}
+
+.card-head-testimonial {
+  position: relative;
+}
+
+.card-head-testimonial::after {
+  position: absolute;
+  font-size: 72px;
+  content: "”";
+  right: 10px;
+  top: -10px;
+}
+
+.card-head-green {
+  background-color: #f5fffb;
+}
+
+.card-head-green::after {
+  color: #defff2;
+}
+
+.card-head-pink {
+  background-color: #fff8f8;
+}
+
+.card-head-pink::after {
+  color: #ffe6e6;
+}
+
+.card-head-blue {
+  background-color: #f7faff;
+}
+
+.card-head-blue::after {
+  color: #e5efff;
+}
+
+.card-head-yellow {
+  background-color: #fffef4;
+}
+
+.card-head-yellow::after {
+  color: #fcf7c6;
+}
+
+.name-initials {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #111;
+}
+.name-initials.green-initial {
+  color: #42dea1;
+  background-color: #defff2;
+  border: 1px solid #5afcbd;
+}
+.name-initials.pink-initial {
+  color: #fca0a0;
+  background-color: #ffd3d3;
+  border: 1px solid #fdc5c5;
+}
+.name-initials.blue-initial {
+  color: #95c1fd;
+  background-color: #e5efff;
+  border: 1px solid #95c1fd;
+}
+.name-initials.yellow-initial {
+  color: #e8dc53;
+  border: 1px solid #f0e780;
+  background-color: #fcf7c6;
+}
+
+.input-field {
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 6px #2e81f71f;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  padding: 10px 10px;
+  width: 280px;
+}
+.input-field::placeholder {
+  color: #e8e8e8;
+}
+.input-field.number-field {
+  width: 100%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.input-field.country-field {
+  position: relative;
+  max-width: 90px;
+  width: 100%;
+  background-color: #fff;
+  color: #666666;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0;
+}
+
+.form-icon-group {
+  position: relative;
+}
+.form-icon-group input {
+  padding-left: 50px;
+}
+.form-icon-group .form-icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+.btn.btn-secondary {
+  background: #fedd3d;
+  color: #1c1c1c;
+}
+
+.text-sm {
+  font-size: 11px;
+}
+
+.text-md {
+  font-size: 12px;
+}
+
+.h3 {
+  font-size: 1.25rem;
+}
+
+.h4 {
+  font-size: 1rem;
+}
+
+.counsellor {
+  background: #f7faff;
+}
+.counsellor .content .heading {
+  line-height: 1.5;
+  font-size: 16px;
+}
+.counsellor .content .subheading {
+  font-size: 16px;
+}
+.counsellor .content .btn {
+  width: 180px;
+}
+.counsellor .counselling-submit {
+  width: 180px;
+}
+
+.subheading {
+  color: #666666;
+}
+
+.scrollable-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.img-counsellor {
+  height: 130px;
+  width: 200px;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.why-prepp .card-title {
+  line-height: 17px;
+}
+
+.app-banner .mobile-img {
+  height: 280px;
+  width: 100%;
+}
+
+.faq {
+  background-image: linear-gradient(180deg, #fffef4 0%, rgba(255, 255, 255, 0) 100%);
+}
+.faq .accordion-item {
+  background: transparent;
+}
+.faq .accordion-button {
+  background: transparent;
+  font-size: 14px;
+}
+.faq .accordion-button:not(.collapsed) {
+  color: #1c1c1c;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.card-head-testimonial {
+  position: relative;
+}
+
+.card-head-testimonial::after {
+  position: absolute;
+  font-size: 72px;
+  content: "”";
+  right: 10px;
+  top: -10px;
+}
+
+.card-head-green {
+  background-color: #f5fffb;
+}
+
+.card-head-green::after {
+  color: #defff2;
+}
+
+.name-initials {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #111;
+}
+.name-initials.green-initial {
+  color: #42dea1;
+  background-color: #defff2;
+  border: 1px solid #5afcbd;
+}
+
+.card-title .subheading {
+  font-size: 12px;
+}
+
+.modal-fullscreen .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.modal-fullscreen .modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal .card-head-testimonial::after {
+  font-size: 200px;
+}
+.modal .btn-close {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal.modal-fullscreen .card-head-testimonial {
+  height: 20vh;
+  border: 0;
+}
+.modal.modal-fullscreen .floating-title {
+  margin-bottom: 50px;
+}
+.modal.modal-fullscreen .floating-title.modal-header .modal-title {
+  height: 90px;
+  width: 90px;
+  margin-bottom: -50px;
+}
+
+/*# sourceMappingURL=m_global.css.map */

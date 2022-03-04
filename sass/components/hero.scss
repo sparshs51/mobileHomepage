@@ -1,0 +1,33 @@
+/* hero header */
+.hero-header {
+  height: 440px;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  background: $primary-bg 0% 0% no-repeat padding-box;
+  width: 100%;
+  .hero-content {
+    padding: 85px 220px;
+  }
+  .main-heading {
+    font-size: 46px;
+  }
+  .hero-subheading {
+    font-size: 22px;
+    color: $dull-brown;
+  }
+  .hero-left-img {
+    z-index: -1;
+    position: absolute;
+    left: -145px;
+    bottom: -28px;
+    height: 400px;
+    width: 450px;
+  }
+  .hero-right-img {
+    z-index: -1;
+    position: absolute;
+    right: -168px;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,71 @@
+@import "common";
+.faq {
+  background: $white;
+}
+.top-article {
+  background: transparent linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.half-collapse .collapse:not(.show) {
+  display: block;
+  height: 350px;
+  overflow: hidden;
+}
+
+.half-collapse .collapsing {
+  height: 3rem;
+}
+
+.half-collapse a.collapse-btn.collapsed::after {
+  content: "+ See More";
+}
+
+.half-collapse a.collapse-btn:not(.collapsed)::after {
+  content: "- See Less";
+}
+.collapse-btn {
+  display: block;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.collapse-btn.collapsed {
+  background: transparent
+    linear-gradient(180deg, #ffffff55 0%, #ffffff 93%, #ffffff 100%) 0% 0%
+    no-repeat padding-box;
+}
+.about-table {
+  th,
+  td {
+    padding: 16px 32px;
+  }
+  thead {
+    background-color: #fcf2c0;
+  }
+  tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #fafafa;
+  }
+}
+.course-card {
+  top: 80px;
+}
+.faculty-img {
+  img.zoomed{
+    transform: scale(0.4);
+  }
+  img{
+    transform: scale(0.185);
+  }
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+}
+.discount-text {
+  background-color: #ebfff2;
+}
+.course-img{
+  max-height: 218px;
+}

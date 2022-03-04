@@ -1,0 +1,121 @@
+.text-sm {
+  font-size: 12px;
+}
+.text-md {
+  font-size: 14px;
+}
+.navbar * {
+  font-size: 0.875rem;
+}
+.h3 {
+  font-size: 1.5rem;
+}
+.h4 {
+  font-size: 1.25rem;
+}
+.counsellor {
+  background: $primary-bg;
+  .content .heading {
+    line-height: 1.5;
+    font-size: 32px;
+  }
+  .content .subheading {
+    font-size: 16px;
+  }
+  .content .btn {
+    width: 180px;
+  }
+  .counselling-submit {
+    width: 180px;
+  }
+}
+.subheading {
+  color: $dull-brown;
+}
+.scrollable-list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.text-ellipsis {
+  white-space: nowrap;
+}
+
+.faq {
+  background-image: linear-gradient(
+    180deg,
+    #fffef4 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  .accordion-item {
+    background: transparent;
+  }
+  .accordion-button {
+    background: transparent;
+    font-size: $font-size-mobile-body;
+  }
+  .accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.card-title {
+  .subheading {
+    font-size: 12px;
+  }
+}
+
+.card-footer {
+  background: #f2f2f233;
+}
+.modal {
+  .card-head-testimonial::after {
+    top: -40px;
+    font-size: 200px;
+  }
+  .name-initials {
+    width: 125px;
+    height: 125px;
+    margin-bottom: -50px;
+  }
+  .btn-close {
+    z-index: 2;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+  }
+  &.modal-fullscreen {
+    .card-head-testimonial {
+      height: 20vh;
+      border: 0;
+    }
+    .floating-title {
+      margin-bottom: 50px;
+    }
+    .floating-title.modal-header .modal-title {
+      height: 90px;
+      width: 90px;
+      margin-bottom: -50px;
+    }
+  }
+  .modal-title.name-initials {
+    font-size: 38px;
+  }
+}
+.carousel-prev {
+  left: -40px;
+}
+.carousel-next {
+  right: -40px;
+}
+.carousel-next,
+.carousel-prev {
+  top: 49%;
+}
+.banner-img {
+  width: 436px;
+  height: 370px;
+}

@@ -1,0 +1,135 @@
+hr {
+  background: #e8e8e8;
+}
+
+.text-ellipsis-2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 2) {
+  .text-ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.text-ellipsis-3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 3) {
+  .text-ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.text-ellipsis-4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 4) {
+  .text-ellipsis-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+}
+
+.faq {
+  background: #fff;
+}
+
+.top-article {
+  background: transparent linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%) 0% 0% no-repeat padding-box;
+}
+
+.half-collapse .collapse:not(.show) {
+  display: block;
+  height: 350px;
+  overflow: hidden;
+}
+
+.half-collapse .collapsing {
+  height: 3rem;
+}
+
+.half-collapse a.collapse-btn.collapsed::after {
+  content: "+ See More";
+}
+
+.half-collapse a.collapse-btn:not(.collapsed)::after {
+  content: "- See Less";
+}
+
+.collapse-btn {
+  display: block;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.collapse-btn.collapsed {
+  background: transparent linear-gradient(180deg, #ffffff55 0%, #ffffff 93%, #ffffff 100%) 0% 0% no-repeat padding-box;
+}
+
+.about-table th,
+.about-table td {
+  padding: 16px 32px;
+}
+.about-table thead {
+  background-color: #fcf2c0;
+}
+.about-table tbody > tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #fafafa;
+}
+
+.course-card {
+  top: 80px;
+}
+
+.faculty-img {
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+}
+.faculty-img img.zoomed {
+  transform: scale(0.4);
+}
+.faculty-img img {
+  transform: scale(0.185);
+}
+
+.discount-text {
+  background-color: #ebfff2;
+}
+
+.course-img {
+  max-height: 218px;
+}
+
+/*# sourceMappingURL=course.css.map */
